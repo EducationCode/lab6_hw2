@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>  
+        function ChangeNameColor(){          
+            let name = document.getElementById("username");      
+            name.style.color = "green"               
+        }
+        function ChangeAgeColor(){             
+            let age = document.getElementById("age");   
+            age.style.color = "green"               
+        }
+        function ChangeBDColor(){           
+            let bd = document.getElementById("bd");     
+            bd.style.color = "green"               
+        }
+    </script> 
+</head>
+<body>
+    <form>
+        Name:
+        <input type="text" id="username" onfocusout="ChangeNameColor()" ><br>
+        Age:
+        <input type="text" id="age" onfocusout="ChangeAgeColor()" ><br>
+        Birthdate:
+        <input type="text" id="bd" onfocusout="ChangeBDColor()" >            
+    </form>
+</body>
+</html>
